@@ -7,7 +7,7 @@ dep = 0;
 
 cmds.forEach((c) => {
   [direction, distance] = c.split(" ");
-  distance = +distance;
+  distance = Number(distance);
   switch (direction) {
     case "forward":
       hor += distance;

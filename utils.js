@@ -12,7 +12,7 @@ const getRawInput = () => {
 }
 
 const getIntInput = () => {
-  return getInput().map(line => Number(line));
+  return getInput().map(Number);
 }
 
 module.exports = {
