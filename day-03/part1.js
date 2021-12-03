@@ -6,7 +6,7 @@ let gamma = "";
 let epsilon = "";
 
 for (let i = 0; i < input[0].length; i++) {
-  const onesCount = input.map((x) => x[i]).filter((x) => x == "1").length;
+  const onesCount = input.filter((x) => x[i] == "1").length;
   if (onesCount > input.length / 2) {
     gamma += "1";
     epsilon += "0";
